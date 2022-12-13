@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;800;1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<div class="header">
+    <div class = "logo-container">
+        <h1 class ="logo">TiredCheetah's Portfolio 🐆</h1>
+    </div>
+    <div class = "nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <body>
+        <div id="project3">
+            <div class="introBox">
+            <div id="storyboard" class="title">
+                <h2 class="text-dark h3"> Development</h2>
+            </div>
+        
+            <div id="" class="intro">
+                <p> I got even more comfortable with React by creating a list-based interface! I developed an interactive interface, used interface components, and tied the components to an internal data state.</p>
+            </div>
+        </div>
+    
+            <h2>I. Picking A Theme</h2>
+            <p> I began by choosing a theme I'm passionate about for my interactive list-based interface. I decided I wanted to focus on music, so the basis of my app was to create a way for users to make their own playlist from a library of songs. I focused on key aspects important to playlist making like genre, vibe, and song lengths. Below are some of the cards I created highlighting some of my favorite songs. </p>
+                <div class="imageRow">
+                    <img src="images/card.png" alt = "machine sketch" style="height: 20rem; width:auto">
+                    <img src="images/card2.png" alt = "machine sketch" style="height: 20rem; width:auto">
+                    <img src="images/card3.png" alt = "machine sketch" style="height: 20rem; width:auto">
+                </div>
+
+               
+    
+                
+        
+            <div id="usability" class="container-fluid " background=" white">
+            <h2>II. Architecture</h2>
+            <p> Once I chose the theme for my interface, I thought about the elements I was  making into components, props, and states. 
+            </p> 
+            <h4>Key features I needed to include were:</h4>
+                <div>
+                    <div>
+                <ol type="a">
+                    <li>At least 2 filtering categories</li> 
+                    <li>At least 1 sorting feature</li>
+                    <li>An aggregator section (can be a dashboard, list, cart) on the same page displaying: </li>
+                    <ul> <li>Items you added to the aggregator</li> </ul>  
+                    <ul> <li>Aggregation of a property: total time, cost, votes, etc., but NOT the total number of items</li> </ul>  
+                    <li>At least 12 item cards, each displaying: </li>
+                    <ul> <li>Item image</li> </ul>  
+                    <ul> <li>Categories that your filter uses</li> </ul>  
+                    <ul> <li>Field(s) that your sort uses</li> </ul>
+                    <ul> <li>Property you are aggregating</li> </ul> 
+                    <ul> <li>A button that adds to/removes from the aggregator</li> </ul>   
+                  </ol>
+                </div>
+                </div>
+
+                <p>I chose to create a filter for the songs by vibe, which could either be upbeat or calm. I also created an option to filter by genre (R&B or Rap). I allowed users to sort the songs by song length. Users were able to click buttons on the song cards to add or remove songs from the playlist aggregated. They could also clear the playlist by clicking its Reset button.</p>
+
+            </div>
+
+
+
+        
+            <div id="accessibility" class="container-fluid " background=" white">
+                <h2>III. Organization of Components</h2>
+                <p>Data is passed between components using props. I have separate components in my code for SongItem, PlaylistItem, Navfilter, and Playlist:</p>
+                
+                <div>
+                    <div>
+                <ol type="a">
+                    <li>SongItems organize the song data displayed</li> 
+                    <li>PlaylistItems organize how the songs are displayed in the Playlist</li>
+                    <li>Navfilter holds my sort and filter functionality</li>
+                    <li>Playlist is where items get added/removed</li>
+                  </ol>
+                </div>
+                </div>
+               
+                
+            </div>
+            
+            <div id="wireframes" class="container-fluid">
+                <h2>IV. Design & Usability</h2>
+                <p>I placed the NavFilter section on the top so it's easy for users to access. I also placed the Playlist section to the right of the song cards so that it is always visible to users. I organized the heirarchy of information on the song cards according to what users expect to see first. Overall, I aimed to make my interface simple and easy to use.
+                </p>
+                <div class="imageRow2">
+                    <a href="https://tiredcheetah888.github.io/development/">Click here to visit  my page</a>
+                    <img src="images/playlistfinal.png" alt = "page redesign" style="height: auto; width: 40rem">
+                
+                </div>
+            </div>
+        
+            </div>
+            </body>
+            </html>
